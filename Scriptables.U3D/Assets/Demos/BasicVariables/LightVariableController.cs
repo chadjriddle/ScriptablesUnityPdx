@@ -17,7 +17,7 @@ namespace Demos.BasicVariables
         void Start ()
         {
             _renderer = GetComponent<Renderer>();
-            _renderer.material = _offMaterial;
+            UpdateMaterial();
             _isOn.ValueChanged += UpdateMaterial;
         }
 
