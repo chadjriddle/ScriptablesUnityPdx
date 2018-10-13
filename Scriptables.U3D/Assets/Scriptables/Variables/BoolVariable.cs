@@ -2,7 +2,7 @@
 
 namespace Scriptables.Variables
 {
-    [CreateAssetMenu(menuName = "Variables/Bool Variable")]
+    [CreateAssetMenu(menuName = "Variables/Bool")]
     public class BoolVariable : GenericVariable<bool>
     {
     }
