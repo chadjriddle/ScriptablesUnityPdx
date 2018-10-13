@@ -41,7 +41,7 @@ namespace Scriptables.Variables
             SetValue(amount);
         }
 
-        public void OnValidate()
+        public virtual void OnValidate()
         {
             OnValueChanged();
         }
