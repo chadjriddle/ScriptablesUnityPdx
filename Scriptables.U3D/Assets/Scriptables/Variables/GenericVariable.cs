@@ -3,11 +3,6 @@ using UnityEngine;
 
 namespace Scriptables.Variables
 {
-    [CreateAssetMenu(menuName = "Variables/Bool Variable")]
-    public class BoolVariable : GenericVariable<bool>
-    {
-    }
-
     public abstract class GenericVariable<T> : ScriptableObject
     {
         [SerializeField]
@@ -46,7 +41,7 @@ namespace Scriptables.Variables
             SetValue(amount);
         }
 
-        public virtual void OnValidate()
+        public void OnValidate()
         {
             OnValueChanged();
         }
