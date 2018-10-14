@@ -1,0 +1,11 @@
+using UnityEngine;
+using Scriptables.Variables;
+#USINGS#
+
+namespace #NAMESPACE#
+{
+    [CreateAssetMenu(menuName = "#PARENT_MENU#/#TYPE# Variable")]
+    public class #TYPE#Variable : GenericVariable<#TYPE#>
+    {
+    }
+}

@@ -1,0 +1,22 @@
+﻿using System;
+using Scriptables.References;
+#USINGS#
+
+namespace #NAMESPACE#
+{
+    [Serializable]
+    public class #TYPE#Reference : GenericReference<#TYPE#, #TYPE#Variable>
+    {
+        public #TYPE#Reference() : base()
+        {
+        }
+
+        public #TYPE#Reference(#TYPE# constant) : base(constant)
+        {
+        }
+
+        public #TYPE#Reference(#TYPE#Variable variable) : base(variable)
+        {
+        }
+    }
+}

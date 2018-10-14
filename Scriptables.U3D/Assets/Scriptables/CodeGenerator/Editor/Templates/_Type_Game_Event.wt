@@ -1,0 +1,13 @@
+﻿using System;
+using UnityEngine;
+using Scriptables.GameEvents;
+#USINGS#
+
+namespace #NAMESPACE#
+{
+    [CreateAssetMenu(menuName = "#PARENT_MENU#/#TYPE# Game Event")]
+    [Serializable]
+    public class #TYPE#GameEvent : GenericGameEvent<#TYPE#>
+    {
+    }
+}

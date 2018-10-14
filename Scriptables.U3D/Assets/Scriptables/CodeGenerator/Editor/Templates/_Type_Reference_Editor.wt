@@ -1,0 +1,11 @@
+﻿using Assets.Scriptables.References.Editor;
+using UnityEditor;
+#USINGS#
+
+namespace #NAMESPACE#
+{
+    [CustomPropertyDrawer(typeof(#TYPE#Reference))]
+    public class #TYPE#ReferenceDrawer : GenericReferenceDrawer
+    {
+    }
+}
