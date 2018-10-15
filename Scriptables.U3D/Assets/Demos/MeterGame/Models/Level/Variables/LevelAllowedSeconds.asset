@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc2715428942274ab7513a3e60c14e9, type: 3}
+  m_Name: LevelAllowedSeconds
+  m_EditorClassIdentifier: 
+  _value: 5
+  _useRange: 0
+  _minValue: 0
+  _maxValue: 0

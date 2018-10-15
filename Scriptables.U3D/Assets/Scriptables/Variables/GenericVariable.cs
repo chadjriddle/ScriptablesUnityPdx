@@ -74,5 +74,10 @@ namespace Scriptables.Variables
         }
 
 
+
+        public override string ToString()
+        {
+            return Value != null ? Value.ToString() : string.Empty;
+        }
     }
 }
