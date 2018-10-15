@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace Assets.Scriptables.CodeGenerator.Editor
 {
-    public class ScriptablesGenerator {
+    public class ScriptablesGenerator
+    {
 
         [MenuItem("Assets/Generate/All Scriptables", false, 10000)]
         public static void Generate(MenuCommand menuCommand)
@@ -17,10 +18,10 @@ namespace Assets.Scriptables.CodeGenerator.Editor
                 return;
             }
 
-            
+
             var scriptNamespace = Generator.ExtractNameSpace(monoscript.text);
             var scriptClassname = Generator.ExtractClassName(monoscript.text);
-            var outputDirectory = Generator.DetermineFullAssetFolder(monoscript) + "/Scriptables";
+            var outputDirectory = Generator.DetermineFullAssetFolder(monoscript) + "/Generated";
 
             GenerateVariableReferenceEditor(scriptNamespace, scriptClassname, outputDirectory);
         }
@@ -62,6 +63,15 @@ namespace Assets.Scriptables.CodeGenerator.Editor
 
             generated = Generator.FromSimpleTemplate(
                 "_Type_Game_Event",
+                outputDirectory,
+                new Replacements()
+                    .Type(targetClassname)
+                    .AddUsing(targetNamespace)
+                    .Add("PARENT_MENU", "Generated"));
+            Debug.Log("Generated - " + generated.ClassName);
+
+            generated = Generator.FromSimpleTemplate(
+                "_Type_Game_Event_Listener",
                 outputDirectory,
                 new Replacements()
                     .Type(targetClassname)
