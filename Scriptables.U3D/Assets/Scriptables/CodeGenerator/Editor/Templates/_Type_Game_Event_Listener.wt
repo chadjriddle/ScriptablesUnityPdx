@@ -1,0 +1,10 @@
+using Scriptables.UnityEvents;
+using Scriptables.GameEvents;
+#USINGS#
+
+namespace #NAMESPACE#
+{
+    public class #TYPE#GameEventListener : GenericGameEventListener<#TYPE#, #TYPE#GameEvent, #TYPE#UnityEvent>
+    {
+    }
+}
