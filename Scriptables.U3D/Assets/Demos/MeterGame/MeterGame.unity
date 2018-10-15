@@ -796,7 +796,7 @@ MonoBehaviour:
     DebugEnabled: 1
   _graceAmount:
     _useConstant: 1
-    _constantValue: 0.05
+    _constantValue: 0.01
     _variable: {fileID: 0}
     DebugEnabled: 1
   _levelCompleteValue: {fileID: 11400000, guid: 2c09631ffe6e95942857146a2589c7ce,
@@ -981,6 +981,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1622891981}
   - component: {fileID: 1622891980}
+  - component: {fileID: 1622891982}
+  - component: {fileID: 1622891983}
   m_Layer: 0
   m_Name: LevelProgression
   m_TagString: Untagged
@@ -1031,6 +1033,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622891982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622891979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188bf118d7d5a394dbcdf41df8f0338c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: cbaa32b55455a6240945ec10ce731584, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1622891980}
+        m_MethodName: LevelCompleted
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: Demos.MeterGame.Models.Level.Scriptables.Generated.LevelCompleteStateUnityEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1622891983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622891979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0e864e6a4779a44a8dc52cea547416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 295c4696dcca0414d847d1d9e8309f26, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1622891980}
+        m_MethodName: NextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1974815523
 GameObject:
   m_ObjectHideFlags: 0

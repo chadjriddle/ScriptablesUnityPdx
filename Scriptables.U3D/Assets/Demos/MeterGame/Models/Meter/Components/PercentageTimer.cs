@@ -2,6 +2,9 @@
 using Scriptables.References;
 using UnityEngine;
 
+/// <summary>
+/// Calculate the percent used of the provided number of seconds and raise an event if/when the time runs out
+/// </summary>
 public class PercentageTimer : MonoBehaviour {
 
     [SerializeField] private FloatReference _secondsToRun;

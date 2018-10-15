@@ -3,6 +3,9 @@ using Demos.MeterGame.Models.Level.Scriptables.Generated;
 using Scriptables.References;
 using UnityEngine;
 
+/// <summary>
+/// When a level is completed determine the LevelCompletedState give the current percentage
+/// </summary>
 public class LevelScorer : MonoBehaviour
 {
     [SerializeField] private FloatReference _currentPercent;

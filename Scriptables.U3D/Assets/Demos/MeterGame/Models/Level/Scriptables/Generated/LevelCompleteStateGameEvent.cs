@@ -6,7 +6,7 @@ using Demos.MeterGame.Models.Level.Scriptables;
 
 namespace Demos.MeterGame.Models.Level.Scriptables.Generated
 {
-    [CreateAssetMenu(menuName = "Meter Game/LevelCompleteState Game Event")]
+    [CreateAssetMenu(menuName = "Generated/LevelCompleteState Game Event")]
     [Serializable]
     public class LevelCompleteStateGameEvent : GenericGameEvent<LevelCompleteState>
     {

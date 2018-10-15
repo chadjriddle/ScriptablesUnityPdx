@@ -2,6 +2,9 @@
 using Scriptables.References;
 using UnityEngine;
 
+/// <summary>
+/// Observer the input action and start the level when the action is pressed and stop the level when the action is released.
+/// </summary>
 public class LevelRunner : MonoBehaviour
 {
 

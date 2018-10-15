@@ -2,6 +2,10 @@
 using Scriptables.References;
 using UnityEngine;
 
+
+/// <summary>
+/// Determine the difficulty of the current level based on the state of the previous level
+/// </summary>
 public class LevelProgression : MonoBehaviour
 {
     [SerializeField] private FloatReference _perfectPercent;

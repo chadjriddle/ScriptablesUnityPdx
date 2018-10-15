@@ -5,7 +5,7 @@ using Demos.MeterGame.Models.Level.Scriptables;
 
 namespace Demos.MeterGame.Models.Level.Scriptables.Generated
 {
-    [CreateAssetMenu(menuName = "Meter Game/LevelCompleteState Variable")]
+    [CreateAssetMenu(menuName = "Generated/LevelCompleteState Variable")]
     public class LevelCompleteStateVariable : GenericVariable<LevelCompleteState>
     {
     }
