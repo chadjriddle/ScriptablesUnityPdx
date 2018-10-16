@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Name: MeterIsRunning
   m_EditorClassIdentifier: 
   _value: 0
+  _defaultValue: 0
+  _autoReset: 1

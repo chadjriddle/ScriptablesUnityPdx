@@ -61,7 +61,6 @@ namespace Scriptables.Variables
 
         protected void Awake()
         {
-            Debug.Log("Awakening!");
             Reset();
         }
 
@@ -72,8 +71,6 @@ namespace Scriptables.Variables
                 _value = _defaultValue;
             }
         }
-
-
 
         public override string ToString()
         {

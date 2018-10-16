@@ -11,4 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 056abf6de3e539c43b057ca981112dc2, type: 3}
   m_Name: LevelCompleteValue
   m_EditorClassIdentifier: 
-  _value: {fileID: 0}
+  _value: {fileID: 11400000, guid: 5b7579c7280c7464c87dc866284a97e5, type: 2}
+  _defaultValue: {fileID: 0}
+  _autoReset: 1

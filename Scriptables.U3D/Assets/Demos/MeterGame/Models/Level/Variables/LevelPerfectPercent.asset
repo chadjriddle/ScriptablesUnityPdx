@@ -11,7 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc2715428942274ab7513a3e60c14e9, type: 3}
   m_Name: LevelPerfectPercent
   m_EditorClassIdentifier: 
-  _value: 0.9
-  _useRange: 0
+  _value: 0
+  _defaultValue: 0.9
+  _autoReset: 1
+  _useRange: 1
   _minValue: 0
-  _maxValue: 0
+  _maxValue: 1
