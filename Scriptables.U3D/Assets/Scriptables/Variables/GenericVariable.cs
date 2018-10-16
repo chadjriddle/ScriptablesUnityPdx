@@ -1,12 +1,19 @@
 ﻿using System;
+using Scriptables.Interfaces;
 using UnityEngine;
 
 namespace Scriptables.Variables
 {
-    public abstract class GenericVariable<T> : ScriptableObject
+    public abstract class GenericVariable<T> : ScriptableObject, IResetable
     {
         [SerializeField]
         private T _value;
+
+        [SerializeField]
+        private T _defaultValue;
+
+        [SerializeField]
+        private bool _autoReset = false;
 
         public T Value => _value;
 
@@ -51,5 +58,21 @@ namespace Scriptables.Variables
             var handler = ValueChanged;
             handler?.Invoke();
         }
+
+        protected void Awake()
+        {
+            Debug.Log("Awakening!");
+            Reset();
+        }
+
+        public virtual void Reset()
+        {
+            if (_autoReset)
+            {
+                _value = _defaultValue;
+            }
+        }
+
+
     }
 }
