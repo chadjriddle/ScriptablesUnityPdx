@@ -61,7 +61,6 @@ namespace Scriptables.Variables
 
         protected void Awake()
         {
-            Debug.Log("Awakening!");
             Reset();
         }
 
@@ -73,6 +72,9 @@ namespace Scriptables.Variables
             }
         }
 
-
+        public override string ToString()
+        {
+            return Value != null ? Value.ToString() : string.Empty;
+        }
     }
 }
