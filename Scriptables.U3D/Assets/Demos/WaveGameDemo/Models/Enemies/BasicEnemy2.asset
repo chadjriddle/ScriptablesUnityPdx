@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 8
   GoldReward: 8
-  Speed: 3
+  Speed: 4
   Health: 10
   Prefab: {fileID: 1060775235790044, guid: 63283bfba9fe1c343b2da10fd1b76441, type: 2}
-  WeaponFunction: {fileID: 11400000, guid: 1073c569fd2c04b4388a118f1b506d1a, type: 2}
+  WeaponFunction: {fileID: 11400000, guid: 62a5eede83c79d34590452b7a91aab3c, type: 2}

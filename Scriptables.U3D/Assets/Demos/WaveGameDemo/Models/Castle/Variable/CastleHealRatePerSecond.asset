@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc2715428942274ab7513a3e60c14e9, type: 3}
   m_Name: CastleHealRatePerSecond
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 1
   _defaultValue: 0
   _autoReset: 0
   _useRange: 0
