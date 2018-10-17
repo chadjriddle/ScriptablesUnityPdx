@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7199fa6a4f54b564498d6ad221e9610b, type: 3}
+  m_Name: BasicEnemy1
+  m_EditorClassIdentifier: 
+  Level: 5
+  GoldReward: 5
+  Speed: 1
+  Health: 5
+  Prefab: {fileID: 1060775235790044, guid: 6a0a66b3e114b0c41840668be3acd552, type: 2}
+  WeaponFunction: {fileID: 11400000, guid: 62a5eede83c79d34590452b7a91aab3c, type: 2}
